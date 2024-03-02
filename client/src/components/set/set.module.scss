@@ -1,0 +1,56 @@
+.setWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	background-color: rgb(240, 240, 240);
+	border-radius: 8px;
+	padding: 8px;
+}
+
+.title {
+	text-align: center;
+}
+
+.set {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.try {
+	display: flex;
+  justify-content: space-between;
+}
+
+.weight {
+	min-width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 8px;
+  padding: 0 4px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	gap: 8px;
+}
+
+.notice {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+.deleteSetBtn {
+	height: 40px;
+	width: 40px;
+	border-radius: 8px;
+}

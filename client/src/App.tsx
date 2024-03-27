@@ -1,11 +1,11 @@
 import React from 'react';
-import  Exercise  from './components/exercise/exercise'
+
+import TrainingDayPage from './pages/trainingDayPage/trainingDayPage';
 
 function App() {
   return (
     <div className="App">
-      <Exercise />
-      <Exercise />
+      <TrainingDayPage/>
     </div>
   );
 }

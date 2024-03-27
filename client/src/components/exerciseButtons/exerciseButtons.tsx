@@ -1,18 +1,32 @@
 import React, { FC } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { ThunkDispatch } from '@reduxjs/toolkit';
+import { AnyAction } from 'redux';
+import { RootState } from '../../redux/rootReducer';
+import { addSet } from '../../redux/slices/trainingDaySlice';
 
 import styles from './exerciseButtons.module.scss'
 
-interface I_ExerciseButtons {
-  addSet: any
-}
+const ExerciseButtons = () => {
+  const dispatch: ThunkDispatch<RootState, undefined, AnyAction> = useDispatch();
 
-const ExerciseButtons: FC<I_ExerciseButtons> = ({addSet}) => {
+  const handleAddSet = () => {
+    dispatch(addSet())
+  }
+
+  const handleConfirmSet = () => {
+
+  }
+
   return (
     <div className={styles.wrapper}>
-      <div className={styles.button}>ok</div>
       <div
       className={styles.button}
-      onClick={addSet}
+      onClick={handleConfirmSet}
+      >ok</div>
+      <div
+      className={styles.button}
+      onClick={handleAddSet}
       >+</div>
     </div>
   )
